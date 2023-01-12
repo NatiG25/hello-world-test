@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: hello_world_test_production
-  username: hello_world_test
-  password: <%= ENV["HELLO_WORLD_TEST_DATABASE_PASSWORD"] %>
+  url: <%= ENV['postgres://hello_world_test_db_user:6VMRPgcyt1HnU5Saa9VPurUAYSR5Dmgi@dpg-cf04mfsgqg4cnpj8246g-a/hello_world_test_db'] %>
